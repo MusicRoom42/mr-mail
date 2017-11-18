@@ -1,10 +1,13 @@
 FROM node:9.2
 
-RUN mkdir /app
+ENV TARGET /app
 
-ADD ./app /app
+RUN mkdir ${TARGET}
 
-WORKDIR /app
+WORKDIR ${TARGET}
 
-RUN npm install \
-    && npm run start
+ADD ./app .
+
+RUN npm install
+
+ENTRYPOINT [ "npm", "run", "start" ]
