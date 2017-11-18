@@ -1,0 +1,21 @@
+{
+  "name": "mr-mail",
+  "version": "0.1.0",
+  "url": "https://github.com/MusicRoom42/mr-mail/issues",
+  "author": "amineau",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MusicRoom42/mr-mail.git"
+  },
+  "scripts": {
+    "start": "nodemon app/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "nodemailer": "^4.4.0"
+  }
+}
